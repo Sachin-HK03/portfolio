@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mediaquerries.css">
+</head>
+<body>
+<nav id="desk-nav">
+    <div class="logo">Sachin HK</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </div>
+</nav>
+<nav id="hamburger-nav">
+    <div class="logo">Sachin HK</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">skills</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section id="profile">
+    <div class="section_pic-container">
+        <img src="./assets/new.jpeg" alt=" Sachin hk" srcset="">
+    </div>
+    <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Sachin HK</h1>
+        <p class="section_text_p2">Frontend Developer</p>
+        <div class="btn-container">
+            <button class="btn btn-color2" onclick="window.open('./assets/resume_sachin.pdf')">download cv</button>  
+            <button class="btn btn-color1" onclick="location.href='./#contact'">contact info</button>          
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/'"/>
+            <img src="./assets/github.png"alt="My Github profile" class="icon"onclick="location.href='https://github.com/'"/>
+          </div>
+  
+    </div>
+
+</section>
+
+
+<section id="about">
+    <p class="about_text">Get Know More</p>
+    <p class="title">About Me</p>
+    <div class="section-container">
+        <div class="section_pic-contanier">
+            <img src="./assets/IMG-20230422-WA0038.jpg" alt="profile" class="about-pic">
+        </div>
+        <div class="about-details-contanier">
+            <div class="about-containers">
+                <div class="details-contanier">
+                    <img src="./assets/experience.png" alt="experince" srcset="" class="icon">
+                    <h3>Skills</h3>
+                    <p>HTML, CSS, JAVASCRIPT, SQL</p><P>PYTHON, C PROGRAMMING</P>
+                </div>
+                <div class="details-contanier">
+                    <img src="./assets/education.png" alt="experince" srcset="" class="icon">
+                    <h3>Education</h3>
+                    <p>Bachelor of Engineering</p><p>Electronics and Communication</p><br>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>To be placed in a company in which I can use my technical skills
+                    and leadership qualities to the upliftment of the company and
+                    personal growth
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experince-details-container">
+        <div class="details-contanier color-conatiner">
+            <div class="article-container">
+                <img src="./assets/main_project.png" alt="project 1" class="prj1">
+                <h2 class="experience-sub-title project-title">project one</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/'"/>
+                        Github
+                    </button>
+                    <button class="btn btn-color2 project-btn" oncilck="location.href='https://sachin-hk03.github.io/newspaper_project/index.html'">
+                        Live dmeo
+                    </button>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="details-contanier color-conatiner">
+            <div class="article-container">
+                <img src="./assets/fylo.png" alt="project 2" class="prj1">
+                <h2 class="experience-sub-title project-title">project two</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/'"/>
+                        Github
+                    </button>
+                    <button class="btn btn-color2 project-btn" oncilck="location.href='https://sachin-hk03.github.io/fylo_clone/'">
+                        Live dmeo
+                    </button>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="details-contanier color-conatiner">
+            <div class="article-container">
+                <img src="./assets/usabilityhub.png" alt="project 3" class="prj1">
+                <h2 class="experience-sub-title project-title">project three</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/'"/>
+                        Github
+                    </button>
+                    <button class="btn btn-color2 project-btn" oncilck="location.href='https://github.com/https://github.com/https://github.com/Sachin-HK03/usability.github.io'">
+                        Live dmeo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'"> -->
+
+
+
+<section id="contact">
+    <p class="section_text_p1">Get in touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-conainer">
+      
+        <div class="mail-conatct">
+        <img src="./assets/email.png" alt="email" class="icon conatct-icon">
+        <p><a href="mailto:sachinhk0303@gmail.com">Sachinhk0303@gmail.com</a></p>
+    </div>
+    <div class="mail-conatct">
+    <img src="./assets/linkedin.png" alt="linkedin" class="icon conatct-icon">
+    <p><a href="https://www.linkedin.com/in/sachin-hk-83560a250">Sachin hk</a></p>
+</div>
+    </div>
+</section>
+
+<footer>
+        
+    
+</footer>
+<footer>
+    <nav>
+        <div class="nav-links-conatiner">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &copy 2023 Sachin hk. All rights reserved.</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
